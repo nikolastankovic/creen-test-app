@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info Snapshot Should matches DOM snapshot 1`] = `
+<div
+  className="MuiGrid-root css-kdmkmi-MuiGrid-root"
+  data-testid="info"
+  fluid={true}
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13wm5bs-MuiGrid-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-subtitle2 MuiTypography-noWrap css-y50ajl-MuiTypography-root"
+    >
+      Info
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13wm5bs-MuiGrid-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-142fl07-MuiTypography-root"
+    >
+      Title
+    </div>
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-cj8e0d-MuiTypography-root"
+    >
+      Things Fall Apart
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13wm5bs-MuiGrid-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-142fl07-MuiTypography-root"
+    >
+      Author
+    </div>
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-cj8e0d-MuiTypography-root"
+    >
+      Chinua Achebe
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13wm5bs-MuiGrid-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-142fl07-MuiTypography-root"
+    >
+      Year
+    </div>
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-cj8e0d-MuiTypography-root"
+    />
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13wm5bs-MuiGrid-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-142fl07-MuiTypography-root"
+    >
+      Quantity
+    </div>
+    <div
+      className="MuiTypography-root MuiTypography-h8 MuiTypography-noWrap css-cj8e0d-MuiTypography-root"
+    >
+      56
+    </div>
+  </div>
+</div>
+`;
