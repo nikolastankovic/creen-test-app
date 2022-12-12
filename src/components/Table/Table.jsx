@@ -43,7 +43,7 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                     )
                   })}
                   <TableCell />
-                  <TableCell />
+            
                 </TableRow>
 
               </TableHead>
@@ -69,10 +69,11 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                                 alt={'Alt'}
                                 loading="lazy"
                               />
-                            </TableCell>
+                            </TableCell> 
                           }
                           {index === 1 && <TableCell component="th" scope="row"> {row[item.name]}</TableCell>}
-                          {index !== 0 && index !== 0 && <TableCell align="right">{row[item.name]}</TableCell>}
+                          {index > 1  && <TableCell align="right">{row[item.name]}</TableCell>}
+         
                         </>
                       )
                     })}

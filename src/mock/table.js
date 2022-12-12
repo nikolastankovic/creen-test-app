@@ -31,8 +31,13 @@ export const HEADERS = [
       name: 'numOfPages',
     },
     {
-      text: 'Quainity',
+      text: 'Quantity',
       sortable: false,
-      quantity: 'quanity',
+      name: 'quantity',
+    },
+    {
+      text: '',
+      sortable: false,
+      name: '',
     },
   ]
