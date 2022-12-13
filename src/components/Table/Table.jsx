@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -37,15 +37,13 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                 <TableRow>
                   {headers && headers.map((header, index) => {
                     return (
-                      <TableCell key={header.text + index} onClick={() => { sortBy(header) }} sx={{ cursor: header.sortable ? 'pointer' : 'default' }} align={`${index !== 1 ? 'right' : 'left'}`}>
+                      <TableCell key={'headerItem' + index} onClick={() => { sortBy(header) }} sx={{ cursor: header.sortable ? 'pointer' : 'default' }} align={`${index !== 1 ? 'right' : 'left'}`}>
                         {header.text}
                       </TableCell>
                     )
                   })}
                   <TableCell />
-            
                 </TableRow>
-
               </TableHead>
               <TableBody sx={{ 'th, td': { border: 0 }, 'th': { fontWeight: 600 }, 'td': { color: '#8b8b8b' } }}>
                 {data && data.slice(0).reverse().map((row, index) => (
@@ -59,9 +57,9 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                       '&:hover': { backgroundColor: '#ebebeb70' }
                     }}
                   >
-                    {headers && headers.map((item, index) => {
+                    {headers && headers.map((item, tableCellIndex) => {
                       return (
-                        <>
+                        <Fragment key={tableCellIndex + 'tableCell'}>
                           {index === 0 &&
                             <TableCell sx={{ 'img': { objectFit: 'cover', width: 30, height: 30 } }}>
                               <img
@@ -73,8 +71,7 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                           }
                           {index === 1 && <TableCell component="th" scope="row"> {row[item.name]}</TableCell>}
                           {index > 1  && <TableCell align="right">{row[item.name]}</TableCell>}
-         
-                        </>
+                        </Fragment>
                       )
                     })}
                     <TableCell>
