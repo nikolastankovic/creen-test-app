@@ -88,7 +88,7 @@ export const FormPage = () => {
     return () => {
       dispatch(setClearSingleBookData());
     }
-  }, [])
+  }, [location.state?.id, dispatch])
 
 
   useEffect(() => {
