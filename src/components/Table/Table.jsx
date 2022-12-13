@@ -60,7 +60,7 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                     {headers && headers.map((item, tableCellIndex) => {
                       return (
                         <Fragment key={tableCellIndex + 'tableCell'}>
-                          {index === 0 &&
+                          {tableCellIndex === 0 &&
                             <TableCell sx={{ 'img': { objectFit: 'cover', width: 30, height: 30 } }}>
                               <img
                                 src={`${row[item.name]}`}
@@ -69,8 +69,8 @@ export default function BasicTable({ onRowSelect, onHeaderSelect, data, headers,
                               />
                             </TableCell> 
                           }
-                          {index === 1 && <TableCell component="th" scope="row"> {row[item.name]}</TableCell>}
-                          {index > 1  && <TableCell align="right">{row[item.name]}</TableCell>}
+                          {tableCellIndex === 1 && <TableCell component="th" scope="row"> {row[item.name]}</TableCell>}
+                          {tableCellIndex > 1  && <TableCell align="right">{row[item.name]}</TableCell>}
                         </Fragment>
                       )
                     })}
