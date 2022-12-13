@@ -23,7 +23,7 @@ const Navigation = () => {
         }
       }
     ));
-  }, [])
+  }, [dispatch])
 
   return (
     <>
